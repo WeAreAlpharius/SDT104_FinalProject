@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang = "en">
+    <head>
+        <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>HomePage-WhiteHats</title>
+        <!--<meta name="description" content="WhiteHats home page">
+        <meta name="keywords" content="cybersecurity,Malware,Network">-->
+        <link rel="icon" href="images/logo.png" type="image/png">
+        <link rel="stylesheet" href="styles/main.css">
+    </head>
+    <body>
+        <header>
+            <div> 
+                <img src="images/logo.png" alt="MetalGear logo" height="20" width="20">
+                <a href="index.html">MetalGear</a>
+            </div> 
+            
+           <img src="images/menu.svg" height="30" width="30" alt="" id="menuBtn">
+                     
+            <nav id="nav">
+                <a href="download.html">Download</a>
+                <a href="#">Blog</a>
+                <a href="#">Develop</a>
+                <a href="#">Discuss</a>
+                <a href="#">Docs</a>
+                <a href="#">Wiki</a>
+            </nav>
+        </header>
+
+        <main>
+            
+            <h1>Discuss</h1>
+
+            <h3>For users and modders</h3>
+            <p>For users/modders, the accepted and preferred means of communication are Discord servers. As such, for most MetalGear-related discussions and announcements, you can use the MetalGear Discord server.</p>
+            <button>Join us in Discord</button>
+            
+
+            <h3>Core development</h3>
+            <p>To contact the core developers of MetalGear and discuss matters pertaining to the development process, as well as to ask the difficult questions, you can use the following means: </p>
+            <ul>
+                <li>the issue trackers on MetalGear repositories, or</li>
+                <li>the form below</li>
+            </ul>
+            
+
+            <form id="form">
+                <h3>Contact form</h3>
+                <input type="email" placeholder="Email" id="email">
+                <input type="text" placeholder="Topic" id="topic">
+                <textarea id="comment" rows="5" cols="33" placeholder="Comment"></textarea>
+                <p id="formError"></p>
+                <button>Submit</button>
+            </form>
+        </main>
+        
+        <footer> 
+                <p>NOT AN OFFICIAL CRAFTBLOCK PRODUCT. NOT APPROVED BY OR ASSOCIATED WITH HEROBRINEDEV.</p>
+                <img src="images/Git.png" alt="">
+        </footer>
+    </body>
+    <script src="scripts/main.js"></script>
+    <script src="scripts/form.js"></script>
+</html>

@@ -1,0 +1,170 @@
+body {
+    margin: 0;
+    background: #E7E8E2;
+    font-family: 'Segoe UI';
+    font-size: 14px;
+    min-height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+}
+
+h1, h3 {
+    font-family: Impact;
+    font-size: 20px;
+}
+
+a {
+    font-family: Impact;
+    text-decoration: none;
+    color: inherit;
+}
+
+header {
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+header, footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-left: 10%;
+    padding-right: 10%;
+
+    background: #A1F7F3;
+    border: 1px solid #000;
+    min-height: 30px;    
+}
+
+footer {
+    font-size: 7px;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+}
+
+button {
+    border-radius: 8px;
+    border-color: transparent;
+    background: linear-gradient(90deg, #F90 0%, #F2CB00 100%);
+    box-shadow: 0 4px 22px 0 rgba(0, 0, 0, 0.12);
+
+    color: white;
+    font-family: Impact;
+    font-size: 16px;
+}
+
+button:hover {
+  transform: translateY(-2px);
+
+  box-shadow: 0 6px 14px rgba(0,0,0,0.2);
+}
+
+button:active {
+  transform: scale(0.96);
+
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    flex-grow: 1;
+
+    padding: 15px;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+hgroup {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: stretch;
+}
+
+
+article {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    gap: 10px;
+}
+
+input, textarea {
+    min-height: 30px;
+    border-radius: 8px;
+    border: 1px solid #C5E0FF;
+    background:  white;
+}
+
+#comment {
+    min-height: 150px;
+}
+
+form > #formError {
+    color: red;
+    display: none;
+}
+
+#menuBtn {
+    cursor: pointer;
+}
+
+nav {
+    display: none;
+}
+
+nav.active {
+    display: flex;
+    flex-direction: column;
+
+    position: absolute;
+    top: 35px;
+    right: 16px;
+
+    background: #E7E8E2;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+
+    z-index: 1;
+}
+
+@media (min-width: 800px) {
+
+    body {
+        font-size: 16px;
+    }
+
+    h1, h3 {
+        font-size: 24px;
+    }
+
+    section {
+        display: flex;
+        flex-direction: row;
+        
+        min-width: 50%;
+        gap: 5px;
+        justify-content: space-between;
+    }
+
+    #menuBtn {
+        display: none;
+    }
+
+    nav {
+        display: flex;
+        align-items: center;
+        gap: 25px;
+    }
+}
