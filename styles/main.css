@@ -15,14 +15,17 @@ h1, h3 {
 }
 
 a {
-    font-family: Impact;
-    text-decoration: none;
     color: inherit;
+}
+
+header a {
+    text-decoration: none;
 }
 
 header {
     border-bottom-right-radius: 5px;
     border-bottom-left-radius: 5px;
+    font-family: Impact;
 }
 
 header, footer {
